@@ -2,11 +2,16 @@
 
 * Create key-pair
     
+    ```
     create_module_key.sh -c
+    ```
 
 * Sign your proprietary modules
     
+    ```
     create_module_key.sh -s \<modulename\>[ \<modulename\>][ \<modulename\>]...
+    ```
+
 * Reboot
 
 If you have a Dualboot with Windows and Bitlocker, you have to type in you Recreation-Key for Bitlocker on first boot in Windows, because you added a key to UEFI
