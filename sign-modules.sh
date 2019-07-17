@@ -81,5 +81,5 @@ echo "Sign kernel modules »${MODULES[*]}« for kernel-version ${KVERS}"
 for i in ${MODULES[*]}; do 
     echo sign $i
     echo sudo /usr/src/kernels/${KVERS}/scripts/sign-file sha256 ./$MOK.priv ./$MOK.der $(modinfo -n ${i})
-    sudo /usr/src/kernels/${KVERS}/scripts/sign-file sha256 ./$MOK.priv ./$MOK.der $(modinfo -n ${i})
+    sudo /usr/src/kernels/${KVERS}/scripts/sign-file sha256 ./$MOK.priv ./$MOK.der $(modinfo -k "${KVERS}" -n ${i})
 done
