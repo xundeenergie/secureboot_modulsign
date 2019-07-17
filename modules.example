@@ -1,0 +1,5 @@
+vboxdrv
+vboxnetflt
+vboxnetadp
+vboxpci
+acpi_call
