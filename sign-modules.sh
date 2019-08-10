@@ -54,7 +54,7 @@ do
             ;;
         -f)
             shift
-            MODULES=($(cat $1))
+            MODULES=($(cat $1 | grep -v '^#'| sed -e '/^[[:blank:]]*$/d'))
             shift
             ;;
         --)
