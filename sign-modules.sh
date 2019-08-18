@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 MOK=modules_signing
 #declare -A MODULES
